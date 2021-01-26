@@ -24,3 +24,8 @@ eureka:
 logging:
   level:
     root: info
+
+### Core ###
+core:
+  jks:
+    directory-path: jwt-certificate/demo/

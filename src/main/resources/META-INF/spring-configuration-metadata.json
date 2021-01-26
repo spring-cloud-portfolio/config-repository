@@ -1,0 +1,102 @@
+{
+  "groups": [
+    {
+      "name": "core",
+      "type": "com.doroshenko.serhey.lib.core.config.properties.CoreProperties",
+      "sourceType": "com.doroshenko.serhey.lib.core.config.properties.CoreProperties"
+    },
+    {
+      "name": "core.certificate",
+      "type": "com.doroshenko.serhey.lib.core.config.properties.CertificateProperties",
+      "sourceType": "com.doroshenko.serhey.lib.core.config.properties.CertificateProperties"
+    },
+    {
+      "name": "core.certificate",
+      "type": "com.doroshenko.serhey.lib.core.config.properties.CertificateProperties",
+      "sourceType": "com.doroshenko.serhey.lib.core.config.properties.CoreProperties",
+      "sourceMethod": "getCertificate()"
+    },
+    {
+      "name": "core.jks",
+      "type": "com.doroshenko.serhey.lib.core.config.properties.JksProperties",
+      "sourceType": "com.doroshenko.serhey.lib.core.config.properties.CoreProperties",
+      "sourceMethod": "getJks()"
+    },
+    {
+      "name": "core.jks",
+      "type": "com.doroshenko.serhey.lib.core.config.properties.JksProperties",
+      "sourceType": "com.doroshenko.serhey.lib.core.config.properties.JksProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "core.certificate.algorithm",
+      "type": "java.lang.String",
+      "description": "JCA signature algorithm (default: SHA512withRSA)",
+      "sourceType": "com.doroshenko.serhey.lib.core.config.properties.CertificateProperties",
+      "defaultValue": "SHA512withRSA"
+    },
+    {
+      "name": "core.certificate.certificate-alias",
+      "type": "java.lang.String",
+      "sourceType": "com.doroshenko.serhey.lib.core.config.properties.CertificateProperties",
+      "defaultValue": "certificate-alias"
+    },
+    {
+      "name": "core.certificate.expiration",
+      "type": "java.lang.Integer",
+      "description": "Certificate expiration days (default: 365)",
+      "sourceType": "com.doroshenko.serhey.lib.core.config.properties.CertificateProperties",
+      "defaultValue": 365
+    },
+    {
+      "name": "core.certificate.issuer",
+      "type": "java.lang.String",
+      "sourceType": "com.doroshenko.serhey.lib.core.config.properties.CertificateProperties",
+      "defaultValue": "CN=CloudPortfolio"
+    },
+    {
+      "name": "core.certificate.private-key-alias",
+      "type": "java.lang.String",
+      "sourceType": "com.doroshenko.serhey.lib.core.config.properties.CertificateProperties",
+      "defaultValue": "private-key-alias"
+    },
+    {
+      "name": "core.certificate.subject",
+      "type": "java.lang.String",
+      "sourceType": "com.doroshenko.serhey.lib.core.config.properties.CertificateProperties",
+      "defaultValue": "CN=SerheyDoroshenko"
+    },
+    {
+      "name": "core.jks.certificate-alias",
+      "type": "java.lang.String",
+      "sourceType": "com.doroshenko.serhey.lib.core.config.properties.JksProperties",
+      "defaultValue": "certificate-alias"
+    },
+    {
+      "name": "core.jks.directory-path",
+      "type": "java.lang.String",
+      "sourceType": "com.doroshenko.serhey.lib.core.config.properties.JksProperties",
+      "defaultValue": "certificate"
+    },
+    {
+      "name": "core.jks.file-name",
+      "type": "java.lang.String",
+      "sourceType": "com.doroshenko.serhey.lib.core.config.properties.JksProperties",
+      "defaultValue": "default.p12"
+    },
+    {
+      "name": "core.jks.password",
+      "type": "java.lang.String",
+      "sourceType": "com.doroshenko.serhey.lib.core.config.properties.JksProperties",
+      "defaultValue": "secret"
+    },
+    {
+      "name": "core.jks.private-key-alias",
+      "type": "java.lang.String",
+      "sourceType": "com.doroshenko.serhey.lib.core.config.properties.JksProperties",
+      "defaultValue": "private-key-alias"
+    }
+  ],
+  "hints": []
+}
