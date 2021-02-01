@@ -9,6 +9,11 @@ spring:
   application:
     name: person-service
 
+  ### JPA ###
+  jpa:
+    show-sql: true
+    open-in-view: off
+
   ### Datasource ###
   datasource:
     username: user
