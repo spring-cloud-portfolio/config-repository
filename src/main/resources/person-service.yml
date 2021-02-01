@@ -9,13 +9,19 @@ spring:
   application:
     name: person-service
 
-  ### Profile ###
-  config:
-    activate:
-      on-profile: default
+  ### Datasource ###
+  datasource:
+    username: user
+    password: password
+    url: jdbc:postgresql://localhost:5440/person_db
 
 ### Eureka ###
 eureka:
   client:
     service-url:
       defaultZone: "http://user:1111@localhost:8761/eureka/"
+
+### Logging ###
+logging:
+  level:
+    root: info
