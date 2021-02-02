@@ -9,12 +9,6 @@ spring:
   application:
     name: auth-server
 
-### Eureka ###
-eureka:
-  client:
-    service-url:
-      defaultZone: "http://user:1111@localhost:8761/eureka/"
-
 ### Logging ###
 logging:
   level:
