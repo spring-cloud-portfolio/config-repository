@@ -20,6 +20,9 @@ spring:
     password: password
     url: jdbc:postgresql://localhost:5440/person_db
 
+  flyway:
+    installed-by: Serhey Doroshenko
+
 ### Logging ###
 logging:
   level:
