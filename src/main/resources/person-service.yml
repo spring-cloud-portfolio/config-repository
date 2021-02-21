@@ -33,6 +33,10 @@ spring:
   flyway:
     installed-by: Serhey Doroshenko
 
+  ### Banner ###
+  banner:
+    location: banner/banner-3-d.txt
+
 ### Logging ###
 logging:
   level:
