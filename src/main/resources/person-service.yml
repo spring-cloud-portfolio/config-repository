@@ -1,6 +1,8 @@
 ### Server ###
 server:
   port: 9002
+  servlet:
+    context-path: /person-service
 
 ### Spring ###
 spring:
@@ -20,6 +22,14 @@ spring:
     password: password
     url: jdbc:postgresql://localhost:5440/person_db
 
+  ### OAuth2 ###
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:9000/oauth2/jwks
+
+  ### Flyway ###
   flyway:
     installed-by: Serhey Doroshenko
 
