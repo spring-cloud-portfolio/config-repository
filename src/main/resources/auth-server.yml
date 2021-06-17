@@ -9,6 +9,17 @@ spring:
   application:
     name: auth-server
 
+  ### JPA ###
+  jpa:
+    show-sql: on
+    open-in-view: off
+
+  ### Datasource ###
+  datasource:
+    username: user
+    password: password
+    url: jdbc:postgresql://localhost:5440/person_db
+
 ### Logging ###
 logging:
   level:
